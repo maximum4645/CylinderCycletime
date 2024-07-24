@@ -1,0 +1,4 @@
+:start
+python threshold_calculation.py
+timeout /t 30 > nul
+goto start

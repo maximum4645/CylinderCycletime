@@ -1,0 +1,119 @@
+{
+  "machining_centers":
+  {
+    "MC32":
+    {
+      "tables":
+      {
+        "clamp": "[FANUC_MC].[dbo].[CHD_MC32_Cylinder_clamp]",
+        "door": "[FANUC_MC].[dbo].[CHD_MC32_Cylinder_door]",
+        "pot": "[FANUC_MC].[dbo].[CHD_MC32_Cylinder_pot]",
+        "shutter": "[FANUC_MC].[dbo].[CHD_MC32_Cylinder_shutter]",
+        "threshold_clamp": "[FANUC_MC].[dbo].[threshold_MC32_clamp]",
+        "threshold_door": "[FANUC_MC].[dbo].[threshold_MC32_door]",
+        "threshold_pot": "[FANUC_MC].[dbo].[threshold_MC32_pot]",
+        "threshold_shutter": "[FANUC_MC].[dbo].[threshold_MC32_shutter]"
+      }
+    },
+    "MC33":
+    {
+      "tables":
+      {
+        "clamp": "[FANUC_MC].[dbo].[CHD_MC33_Cylinder_clamp]",
+        "door": "[FANUC_MC].[dbo].[CHD_MC33_Cylinder_door]",
+        "pot": "[FANUC_MC].[dbo].[CHD_MC33_Cylinder_pot]",
+        "shutter": "[FANUC_MC].[dbo].[CHD_MC33_Cylinder_shutter]",
+        "threshold_clamp": "[FANUC_MC].[dbo].[threshold_MC33_clamp]",
+        "threshold_door": "[FANUC_MC].[dbo].[threshold_MC33_door]",
+        "threshold_pot": "[FANUC_MC].[dbo].[threshold_MC33_pot]",
+        "threshold_shutter": "[FANUC_MC].[dbo].[threshold_MC33_shutter]"
+      }
+    },
+    "MC34":
+    {
+      "tables":
+      {
+        "clamp": "[FANUC_MC].[dbo].[CHD_MC34_Cylinder_clamp]",
+        "door": "[FANUC_MC].[dbo].[CHD_MC34_Cylinder_door]",
+        "pot": "[FANUC_MC].[dbo].[CHD_MC34_Cylinder_pot]",
+        "shutter": "[FANUC_MC].[dbo].[CHD_MC34_Cylinder_shutter]",
+        "threshold_clamp": "[FANUC_MC].[dbo].[threshold_MC34_clamp]",
+        "threshold_door": "[FANUC_MC].[dbo].[threshold_MC34_door]",
+        "threshold_pot": "[FANUC_MC].[dbo].[threshold_MC34_pot]",
+        "threshold_shutter": "[FANUC_MC].[dbo].[threshold_MC34_shutter]"
+      }
+    },
+    "MC35":
+    {
+      "tables":
+      {
+        "clamp": "[FANUC_MC].[dbo].[CHD_MC35_Cylinder_clamp]",
+        "door": "[FANUC_MC].[dbo].[CHD_MC35_Cylinder_door]",
+        "pot": "[FANUC_MC].[dbo].[CHD_MC35_Cylinder_pot]",
+        "shutter": "[FANUC_MC].[dbo].[CHD_MC35_Cylinder_shutter]",
+        "threshold_clamp": "[FANUC_MC].[dbo].[threshold_MC35_clamp]",
+        "threshold_door": "[FANUC_MC].[dbo].[threshold_MC35_door]",
+        "threshold_pot": "[FANUC_MC].[dbo].[threshold_MC35_pot]",
+        "threshold_shutter": "[FANUC_MC].[dbo].[threshold_MC35_shutter]"
+      }
+    },
+    "MC36":
+    {
+      "tables":
+      {
+        "clamp": "[FANUC_MC].[dbo].[CHD_MC36_Cylinder_clamp]",
+        "door": "[FANUC_MC].[dbo].[CHD_MC36_Cylinder_door]",
+        "pot": "[FANUC_MC].[dbo].[CHD_MC36_Cylinder_pot]",
+        "shutter": "[FANUC_MC].[dbo].[CHD_MC36_Cylinder_shutter]",
+        "threshold_clamp": "[FANUC_MC].[dbo].[threshold_MC36_clamp]",
+        "threshold_door": "[FANUC_MC].[dbo].[threshold_MC36_door]",
+        "threshold_pot": "[FANUC_MC].[dbo].[threshold_MC36_pot]",
+        "threshold_shutter": "[FANUC_MC].[dbo].[threshold_MC36_shutter]"
+      }
+    },
+    "MC37":
+    {
+      "tables":
+      {
+        "clamp": "[FANUC_MC].[dbo].[CHD_MC37_Cylinder_clamp]",
+        "door": "[FANUC_MC].[dbo].[CHD_MC37_Cylinder_door]",
+        "pot": "[FANUC_MC].[dbo].[CHD_MC37_Cylinder_pot]",
+        "shutter": "[FANUC_MC].[dbo].[CHD_MC37_Cylinder_shutter]",
+        "threshold_clamp": "[FANUC_MC].[dbo].[threshold_MC37_clamp]",
+        "threshold_door": "[FANUC_MC].[dbo].[threshold_MC37_door]",
+        "threshold_pot": "[FANUC_MC].[dbo].[threshold_MC37_pot]",
+        "threshold_shutter": "[FANUC_MC].[dbo].[threshold_MC37_shutter]"
+      }
+    }
+  },
+  "columns":
+  {
+    "tables":
+    {
+      "clamp": ["STAMP_DATETIME", "clamping_time", "unclamping_time"],
+      "door": ["STAMP_DATETIME", "door_closing_time_L", "door_closing_time_R", "door_opening_time_L", "door_opening_time_R"],
+      "pot" : ["STAMP_DATETIME", "atc_pot_time", "mgz_pot_time"],
+      "shutter" : ["STAMP_DATETIME", "shutter_closing_time", "shutter_opening_time"],
+      "threshold_clamp" : ["STAMP_DATETIME", "clamping_time_1", "unclamping_time_1", 
+        "clamping_time_2", "unclamping_time_2", 
+        "clamping_time_3", "unclamping_time_3", 
+        "clamping_time_4", "unclamping_time_4",
+        "clamping_time_5", "unclamping_time_5"],
+      "threshold_door" : ["STAMP_DATETIME", "door_closing_time_L_1", "door_closing_time_R_1", "door_opening_time_L_1", "door_opening_time_R_1",
+        "door_closing_time_L_2", "door_closing_time_R_2", "door_opening_time_L_2", "door_opening_time_R_2",
+        "door_closing_time_L_3", "door_closing_time_R_3", "door_opening_time_L_3", "door_opening_time_R_3",
+        "door_closing_time_L_4", "door_closing_time_R_4", "door_opening_time_L_4", "door_opening_time_R_4",
+        "door_closing_time_L_5", "door_closing_time_R_5", "door_opening_time_L_5", "door_opening_time_R_5"],
+      "threshold_pot" : ["STAMP_DATETIME", "atc_pot_time_1", "mgz_pot_time_1",
+        "atc_pot_time_2", "mgz_pot_time_2",
+        "atc_pot_time_3", "mgz_pot_time_3",
+        "atc_pot_time_4", "mgz_pot_time_4",
+        "atc_pot_time_5", "mgz_pot_time_5"],
+      "threshold_shutter" : ["STAMP_DATETIME", "shutter_closing_time_1", "shutter_opening_time_1",
+        "shutter_closing_time_2", "shutter_opening_time_2",
+        "shutter_closing_time_3", "shutter_opening_time_3",
+        "shutter_closing_time_4", "shutter_opening_time_4",
+        "shutter_closing_time_5", "shutter_opening_time_5"]
+    }
+  }
+}
